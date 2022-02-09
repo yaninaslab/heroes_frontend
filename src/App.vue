@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <hero-cards>
+   </hero-cards>
+   <villain-cards></villain-cards>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeroCards from './components/HeroCards.vue'
+import VillainCards from './components/VillainCards.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeroCards,
+    VillainCards
   }
 }
 </script>
@@ -24,5 +27,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.song_grid {
+  display: grid;
+  position: absolute;
+  left: 20%;
+}
+.play_grid {
+  display: grid;
+  position: absolute;
+  right: 20%;
 }
 </style>
